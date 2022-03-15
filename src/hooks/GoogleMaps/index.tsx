@@ -58,7 +58,6 @@ export const GoogleMaps = ({
       initializeService();
     } catch (error) {
       errorHandler && errorHandler(error);
-    //   console.error(error);
     }
   };
 
@@ -71,7 +70,6 @@ export const GoogleMaps = ({
       }
     } catch (error) {
       errorHandler && errorHandler(error);
-    //   console.error(error);
     }
   }, []);
 

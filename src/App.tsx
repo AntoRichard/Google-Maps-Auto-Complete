@@ -1,5 +1,5 @@
 import React from "react";
-import AutoComplete from "./shared/components/AutoComplete";
+import AutoComplete from "./components/AutoComplete";
 
 const GOOGLE_MAPS_API_KEY = "AIzaSyD37UizytAiQ7AefQr-4WqfcWFa6FZajw0";
 

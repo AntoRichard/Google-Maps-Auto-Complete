@@ -1,7 +1,13 @@
 {
-  "name": "react-ts-antd-boilerplate",
+  "name": "google-maps-react-auto-complete",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/AutoComplete/index.tsx",
+  "module": "dist/AutoComplete/index.tsx",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.12.4",
     "axios": "^0.19.2",
@@ -17,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist && mkdir dist && babel ./src/components -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,5 +50,10 @@
     "@types/node": "^12.12.53",
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
   }
 }
